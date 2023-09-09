@@ -1,0 +1,368 @@
+@import "variables";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    //font-family: -apple-system, "Open Sans", BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    //Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+html {
+    //scroll-behavior: smooth;
+}
+
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    //line-height: 1;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.grid {
+    margin: 0 auto;
+    @media (min-width: 375px) and (max-width: 639px) {
+        min-width: 345px;
+        max-width: 590px;
+        padding: 30px 12px;
+    }
+    @media (min-width: 640px) and (max-width: 767px) {
+        min-width: 590px;
+        max-width: 740px;
+        padding: 32px 20px;
+    }
+    @media (min-width: 768px) and (max-width: 1023px) {
+        min-width: 740px;
+        max-width: 1020px;
+        padding: 63px 50px;
+    }
+    @media (min-width: 1024px) and (max-width: 1279px) {
+        min-width: 1020px;
+        max-width: 1190px;
+        padding: 63px 50px;
+    }
+    @media (min-width: 1280px) and (max-width: 1439px) {
+        min-width: 1190px;
+        max-width: 1390px;
+        padding: 74px 62px;
+    }
+    @media (min-width: 1440px) and (max-width: 1919px) {
+        min-width: 1390px;
+        max-width: 1720px;
+        padding: 60px 65px;
+    }
+    @media (min-width: 1920px) {
+        width: 1720px;
+        padding: 55px 0;
+    }
+}
+
+.gridServices {
+    margin: 0 auto;
+    @media (min-width: 375px) and (max-width: 639px) {
+        min-width: 345px;
+        max-width: 590px;
+        &:first-child {
+            padding: 30px 12px;
+        }
+    }
+    @media (min-width: 640px) and (max-width: 767px) {
+        min-width: 590px;
+        max-width: 740px;
+        padding: 32px 20px;
+    }
+    @media (min-width: 768px) and (max-width: 1023px) {
+        min-width: 740px;
+        max-width: 1020px;
+        padding: 63px 50px;
+    }
+    @media (min-width: 1024px) and (max-width: 1279px) {
+        min-width: 1020px;
+        max-width: 1190px;
+        padding: 63px 50px;
+    }
+    @media (min-width: 1280px) and (max-width: 1439px) {
+        min-width: 1190px;
+        max-width: 1390px;
+        padding: 74px 62px;
+    }
+    @media (min-width: 1440px) and (max-width: 1919px) {
+        min-width: 1390px;
+        max-width: 1720px;
+        padding: 90px 65px;
+    }
+    @media (min-width: 1920px) {
+        width: 1720px;
+        padding: 80px 0;
+        //&:first-child{
+        //    padding: 65px 0;
+        //}
+    }
+}
+
+.padding {
+    @media (min-width: 375px) and (max-width: 639px) {
+        padding: 30px 12px;
+    }
+    @media (min-width: 640px) and (max-width: 767px) {
+        padding: 32px 20px;
+    }
+    @media (min-width: 768px) and (max-width: 1023px) {
+        padding: 63px 50px 36px 50px;
+    }
+    @media (min-width: 1024px) and (max-width: 1279px) {
+        padding: 63px 50px;
+    }
+    @media (min-width: 1280px) and (max-width: 1439px) {
+        padding: 74px 62px;
+    }
+    @media (min-width: 1440px) and (max-width: 1919px) {
+        padding: 90px 90px;
+    }
+    @media (min-width: 1920px) {
+        padding: 80px 180px;
+    }
+}
+
+.wrapper {
+}
+
+.text {
+    font-size: 16px;
+    line-height: 135%;
+}
+
+
+.swiper {
+    .swiper-wrapper {
+        .swiper-slide {
+        }
+    }
+}
+
+.page {
+    position: absolute;
+    //left: 15px;
+    //right: 15px;
+}
+
+.page-enter {
+    opacity: 0;
+    //transform: scale(1.1);
+}
+
+.page-enter-active {
+    opacity: 1;
+    //transform: scale(1);
+    transition: opacity $anim-time;
+}
+
+.page-exit {
+    opacity: 1;
+    //transform: scale(1);
+}
+
+.page-exit-active {
+    opacity: 1;
+    //transform: scale(0.9);
+    transition: opacity $anim-time;
+}
+
+.backgroundFirstComponent {
+    height: 97vh;
+    @media (min-width: 1920px), (min-width: 1440px) and (max-width: 1919px) {
+        height: 98vh;
+    }
+    background-image: url("../public/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mySwiper {
+    width: 100%;
+    height: 100%;
+}
+
+.is-active, .no-active {
+    margin-top: 2px;
+    height: 2px;
+    background-color: $black;
+}
+
+.is-active {
+    width: 100%;
+    transition: width 1.4s ease;
+}
+
+.no-active {
+    width: 0;
+    transition: width 1.4s ease;
+}
+
+.spoiler {
+    height: 0;
+    transition: height 0.8s ease;
+    overflow: hidden;
+    display: grid;
+    padding-top: 50px;
+    grid-template-columns: 784px 755px;
+    grid-template-rows: 374px 374px;
+    grid-template-areas:
+          "first second"
+          "first third";
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.open-spoiler {
+    transition: height 0.8s ease;
+    height: 820px;
+}
+
+
+.form {
+    &__textInput, &__textInputError {
+        display: flex;
+        //margin-bottom: 18px;
+        font-size: 16px;
+        font-weight: 600;
+        width: 100%;
+        padding: 21px 0 19px 15px;
+    }
+
+    &__textInput {
+        //border: 2px solid $dark-blue;
+        color: $grey;
+    }
+
+    &__textInputError {
+        //border: 2px solid $dark-red;
+        //color: $dark-red;
+    }
+}
+
+.myMaps {
+    width: 100%;
+    height: 100%;
+}
+
+.curtains {
+    position: absolute;
+    z-index: 99;
+
+    &__top, &__topActive, {
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        right: 0;
+        position: fixed;
+        background-color: $dark-blue;
+        z-index: 99;
+        //transition: all 1.8s ease;
+        transform: translateY(0);
+    }
+
+    &__top, &__topActive {
+        top: 0;
+    }
+
+    &__topActive {
+        transform: translateY(-110%);
+        transition: transform 1.2s ease;
+        //height: 0;
+        //transition: height 1.2s linear;
+    }
+}
+
+.wrapper-header {
+    position: relative;
+}
+
+.root {
+    display: flex;
+    user-select: none;
+
+    li {
+        a {
+            padding: 20px 15px;
+            transition: color .3s ease;
+
+            @media (min-width: 375px) {
+                padding: 20px 10px;
+            }
+
+            &:hover {
+                color: $black;
+            }
+        }
+
+        margin: 0 5px;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 500;
+        color: $greyForContacts;
+    }
+
+    .selected {
+        color: $black;
+    }
+
+    @media (min-width: 375px) and (max-width: 639px) {
+    }
+    @media (min-width: 640px) and (max-width: 767px) {
+    }
+    @media (min-width: 768px) and (max-width: 1023px) {
+    }
+    @media (min-width: 1024px) and (max-width: 1279px) {
+    }
+    @media (min-width: 1280px) and (max-width: 1439px) {
+    }
+    @media (min-width: 1440px) and (max-width: 1919px) {
+    }
+    @media (min-width: 1920px) {
+    }
+}
+
+
+.modal {
+    transition: 0.4s;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.modal.active {
+    opacity: 1;
+    pointer-events: all;
+}

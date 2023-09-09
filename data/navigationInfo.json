@@ -1,0 +1,66 @@
+{
+  "navigation": [
+    {
+      "id": 1,
+      "title": "Главная",
+      "path": "/"
+    },
+    {
+      "id": 2,
+      "title": "О компании",
+      "path": "/about"
+    },
+    {
+      "id": 3,
+      "title": "Работы и услуги",
+      "path": "/work"
+    },
+    {
+      "id": 4,
+      "title": "Проекты",
+      "path": "/projects"
+    },
+    {
+      "id": 5,
+      "title": "Контакты",
+      "path": "/contacts"
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "title": "Электромонтажные работы",
+      "path": "/work#electric-installation-work"
+    },
+    {
+      "id": 2,
+      "title": "Проектные работы",
+      "path": "/work#design-work"
+    },
+    {
+      "id": 3,
+      "title": "Общестроительные работы",
+      "path": "/work#civil-works"
+    },
+    {
+      "id": 4,
+      "title": "Санитарно-технические работы",
+      "path": "/work#plumbing"
+    },
+    {
+      "id": 5,
+      "title": "Работы по устройству внутренних инженерных систем и оборудования",
+      "path": "/work#works-on-the-arrangement-of-systems-and-equipment"
+    },
+    {
+      "id": 6,
+      "title": "Монтаж электрооборудования, наружных и внутренних сетей до 750 кВ",
+      "path": "/work#installation-of-electrical-equipment-up-to-750 kV"
+    },
+    {
+      "id": 7,
+      "title": "Монтаж технологического оборудования",
+      "path": "/work#installation-of-technological-equipment"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+@import '../variables';
+
+$heightBurger: 20px;
+$animBurger: width .5s ease-in;
+
+.burger {
+    width: 22px;
+    height: 16px;
+    position: fixed;
+    z-index: 99;
+
+    right: 23px;
+    top: 24px;
+
+    &__btn, &__btnActive {
+        cursor: pointer;
+        &:after, &:before {
+            transition: width .3s ease-in;
+            content: '';
+            position: absolute;
+            height: 2px;
+        }
+        &:after {
+            width: 17px;
+            right: 0;
+            top: 0;
+        }
+        &:before {
+            width: 25px;
+            right: 0;
+            bottom: 0;
+        }
+    }
+
+    &__btn {
+        &:after, &:before {
+            background-color: $grey;
+        }
+    }
+
+    &__btnActive {
+        &:after {
+            width: 9px;
+            background-color: $dark;
+        }
+
+        &:before {
+            background-color: $dark;
+        }
+    }
+
+    &__span, &__spanActive {
+        position: absolute;
+        height: 2px;
+        right: 0;
+        top: 7px;
+        transition: $animBurger;
+    }
+
+    &__span {
+        width: 22px;
+        background-color: $grey;
+    }
+
+    &__spanActive {
+        width: 15px;
+        background-color: $dark;
+    }
+}
+
+.navigation, .navigationActive {
+    background-color: $white;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: 98;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .7s ease-in;
+    text-align: center;
+}
+
+.navigation {
+    transform: translateY(-100%);
+    &__content {
+        width: 60%;
+    }
+
+    &__item {
+        margin-bottom: 20px;
+        padding: 10px 20px;
+
+        letter-spacing: .3px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 130%;
+        color: $black_background;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__itemActive {
+        color: $grey;
+    }
+
+}
+
+.navigationActive {
+    transform: translateY(0);
+
+    &__item {
+        margin-bottom: 30px;
+    }
+
+}
+
+.menu {
+    width: 150px;
+    height: 50px;
+
+    //width: 22px;
+    //height: 16px;
+
+    position: relative;
+    //justify-self: flex-end;
+    //margin: 4px 10px;
+
+}
